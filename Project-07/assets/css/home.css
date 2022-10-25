@@ -1,0 +1,312 @@
+@charset "UTF-8";
+body {
+  font-family: "Lato-Regular";
+}
+body .show-desktop {
+  display: none;
+}
+body a {
+  color: #fff;
+  text-decoration: none;
+}
+body ul {
+  padding: 0;
+  list-style: none;
+}
+body .hide-mobile {
+  display: none;
+}
+body.open > header .menu-links {
+  right: 0;
+}
+body > header {
+  height: 100px;
+  width: 100%;
+  background-color: #161618;
+  border-bottom: 2px solid #ccc;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+body > header .mobile-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 25px;
+}
+body > header .mobile-content .nav-desktop {
+  display: none;
+}
+body > header .menu-links {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  background-color: #cacad2;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+body > header .menu-links > a {
+  margin: 15px;
+  width: 48px;
+  height: 48px;
+  float: right;
+}
+body > header .menu-links ul {
+  margin: 150px 0;
+  text-align: center;
+  padding: 0;
+  font-size: 18px;
+  list-style: none;
+  /* Seletor irmao adjacente */
+}
+body > header .menu-links ul li + li {
+  margin-top: 40px;
+}
+body section.hero {
+  background-image: url("../images/pao-de-acucar-mobile.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  background-size: cover;
+}
+body section.hero::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(#161618, rgba(22, 22, 24, 0));
+}
+body section.hero .destak {
+  height: 100vh;
+  position: relative;
+  padding-top: 100px;
+  color: #fff;
+}
+body section.hero .destak .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 200px);
+}
+body section.hero .destak .title .wrapper_content .index_slider {
+  display: none;
+}
+body section.hero .destak .title .wrapper_content .wrapper_title h1 {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+}
+body section.hero .destak .title .wrapper_content .wrapper_title h1 span {
+  font-family: "Rock Salt";
+  font-size: 150px;
+}
+body section.hero .destak .title .wrapper_content .wrapper_title h2 {
+  display: none;
+}
+body section.hero .destak .links {
+  background-color: #131c21;
+  opacity: 0.8;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body section.hero .destak .links .link-item {
+  /* color: #f2b822; */
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+body section.hero .destak .links .link-item svg {
+  fill: #f2b822;
+  margin-right: 22px;
+  height: 48px;
+  width: 48px;
+}
+body section.hero .destak .links .link-item h3,
+body section.hero .destak .links .link-item h4 {
+  font-weight: 300;
+  margin: 0;
+}
+body section.hero .destak .links .link-item h3 {
+  font-size: 25px;
+  line-height: 1;
+}
+body section.hero .destak .links .link-item h4 {
+  font-size: 15px;
+  line-height: 1;
+}
+body section.hero .destak .links .link-item:first-child {
+  display: flex;
+}
+body section.hero .destak .links .arrow {
+  margin-left: 10px;
+  position: absolute;
+  right: 0;
+}
+body section.hero .destak .links .arrow svg {
+  margin-right: 40px;
+}
+
+/* //Responsive Web Design - RWD
+1 - O Browser (navegador) deve ter a capacidade de renderizar o site em dispositivos moveis (meta viewport) */
+/* 2 - Definir Breackpoints */
+/* 3- Defina QUAL elemento sofre mudanças, QUANDO e COMO - dentro dos media queries */
+@media (min-width: 768px) {
+  body .show-desktop {
+    display: block;
+  }
+  body .max-width {
+    max-width: 700px !important;
+  }
+  body header .search {
+    position: relative;
+  }
+  body header .search img {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 24px;
+  }
+  body header .search input {
+    width: 500px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1882352941);
+    color: #fff;
+    padding-left: 50px;
+    outline: 0;
+    border: none;
+    border-radius: 20px;
+  }
+  body header .search input::placeholder {
+    color: #e1e1e1;
+  }
+  body section.hero {
+    background-image: url("../images/pao-de-acucar-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+  }
+  body section.hero .destak .title {
+    position: relative;
+  }
+  body section.hero .destak .title .wrapper_content .wrapper_title {
+    position: relative;
+  }
+  body section.hero .destak .title .wrapper_content .wrapper_title h1 {
+    flex-direction: row;
+    align-items: center;
+    font-size: 100px;
+  }
+  body section.hero .destak .title .wrapper_content .wrapper_title h1 span {
+    margin-left: 45px;
+  }
+  body section.hero .destak .title .wrapper_content .wrapper_title h2 {
+    position: absolute;
+    display: flex;
+    bottom: 100px;
+    left: 100px;
+    font-family: "Lato-Light";
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  body section.hero .destak .links .link-item h3 {
+    font-size: 25px;
+    line-height: 1;
+  }
+  body section.hero .destak .links .link-item h4 {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  body section.hero .destak .links .link-item:nth-child(2) {
+    display: flex;
+    margin-left: 36px;
+  }
+  body section.hero .destak .arrow {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  body section.hero {
+    background-image: url("../images/pao-de-acucar-desktop.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+  }
+  body section.hero .destak .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body section.hero .destak .wrapper_content {
+    position: relative;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body section.hero .destak .wrapper_content .index_slider {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+  body section.hero .destak .wrapper_content .index_slider .item_slider_index {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  body section.hero .destak .wrapper_content .index_slider .item_slider_index span {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  body section.hero .destak .wrapper_content .index_slider .item_slider_index .bar {
+    height: 0;
+  }
+  body section.hero .destak .wrapper_content .index_slider .item_slider_index.active {
+    color: #f2b822;
+    margin-bottom: 0;
+  }
+  body section.hero .destak .wrapper_content .index_slider .item_slider_index.active .bar {
+    margin-top: 2px;
+    margin-bottom: 8px;
+    height: 100px;
+    width: 2px;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  body section.hero .destak .links .link-item h3 {
+    font-size: 18px;
+    line-height: 1;
+  }
+  body section.hero .destak .links .link-item svg path {
+    fill: #fff;
+  }
+  body section.hero .destak .links .link-item.selected {
+    color: #f2b822;
+  }
+  body section.hero .destak .links .link-item.selected svg path {
+    fill: #f2b822;
+  }
+  body section.hero .destak .links .link-item:nth-child(3), body section.hero .destak .links .link-item:nth-child(4) {
+    display: flex;
+    margin-left: 36px;
+  }
+  body section.hero .destak .arrow {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,777 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+}
+body .show-desktop,
+body .show-tablet {
+  display: none;
+}
+body a {
+  text-decoration: none;
+  color: #fff;
+}
+body ul {
+  padding: 0;
+  margin: 0;
+}
+body ul li {
+  list-style: none;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p {
+  margin: 0;
+}
+body .custom-hr {
+  width: 180px;
+  height: 2px;
+  margin: 0;
+  margin-top: 10px;
+  border-color: #f2b822;
+  background-color: #f2b822;
+}
+body .section-max-width {
+  max-width: 300px;
+  margin: 0 auto;
+}
+body .section-subtitle {
+  font-size: 1.5em;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  background-color: #131c21;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  body .section-max-width {
+    max-width: 700px;
+  }
+  body .section-subtitle {
+    font-size: 2.5em;
+  }
+  body .show-tablet {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  body .section-max-width {
+    max-width: 1100px;
+  }
+  body .show-desktop {
+    display: block;
+  }
+  body .show-mobile {
+    display: none;
+  }
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("/assets/fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato-Light";
+  font-weight: 200;
+  src: url("/assets/fonts/Lato/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rock Salt";
+  src: url("/assets/fonts/Rock-Salt/RockSalt-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Lato-Regular";
+}
+body .show-desktop {
+  display: none;
+}
+body a {
+  color: #fff;
+  text-decoration: none;
+}
+body ul {
+  padding: 0;
+  list-style: none;
+}
+body .hide-mobile {
+  display: none;
+}
+body.open > header .menu-links {
+  right: 0;
+}
+body > header {
+  height: 100px;
+  width: 100%;
+  background-color: #161618;
+  border-bottom: 2px solid #ccc;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+body > header .mobile-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 25px;
+}
+body > header .mobile-content .nav-desktop {
+  display: none;
+}
+body > header .menu-links {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  background-color: #cacad2;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+body > header .menu-links > a {
+  margin: 15px;
+  width: 48px;
+  height: 48px;
+  float: right;
+}
+body > header .menu-links ul {
+  margin: 150px 0;
+  text-align: center;
+  padding: 0;
+  font-size: 18px;
+  list-style: none;
+  /* Seletor irmao adjacente */
+}
+body > header .menu-links ul li + li {
+  margin-top: 40px;
+}
+body section.hero {
+  background-image: url("../images/pao-de-acucar-mobile.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  background-size: cover;
+}
+body section.hero::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(#161618, rgba(22, 22, 24, 0));
+}
+body section.hero .destak {
+  height: 100vh;
+  position: relative;
+  padding-top: 100px;
+  color: #fff;
+}
+body section.hero .destak .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 200px);
+}
+body section.hero .destak .title .wrapper_content .index_slider {
+  display: none;
+}
+body section.hero .destak .title .wrapper_content .wrapper_title h1 {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+}
+body section.hero .destak .title .wrapper_content .wrapper_title h1 span {
+  font-family: "Rock Salt";
+  font-size: 150px;
+}
+body section.hero .destak .title .wrapper_content .wrapper_title h2 {
+  display: none;
+}
+body section.hero .destak .links {
+  background-color: #131c21;
+  opacity: 0.8;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body section.hero .destak .links .link-item {
+  /* color: #f2b822; */
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+body section.hero .destak .links .link-item svg {
+  fill: #f2b822;
+  margin-right: 22px;
+  height: 48px;
+  width: 48px;
+}
+body section.hero .destak .links .link-item h3,
+body section.hero .destak .links .link-item h4 {
+  font-weight: 300;
+  margin: 0;
+}
+body section.hero .destak .links .link-item h3 {
+  font-size: 25px;
+  line-height: 1;
+}
+body section.hero .destak .links .link-item h4 {
+  font-size: 15px;
+  line-height: 1;
+}
+body section.hero .destak .links .link-item:first-child {
+  display: flex;
+}
+body section.hero .destak .links .arrow {
+  margin-left: 10px;
+  position: absolute;
+  right: 0;
+}
+body section.hero .destak .links .arrow svg {
+  margin-right: 40px;
+}
+
+/* //Responsive Web Design - RWD
+1 - O Browser (navegador) deve ter a capacidade de renderizar o site em dispositivos moveis (meta viewport) */
+/* 2 - Definir Breackpoints */
+/* 3- Defina QUAL elemento sofre mudanças, QUANDO e COMO - dentro dos media queries */
+@media (min-width: 768px) {
+  body .show-desktop {
+    display: block;
+  }
+  body .max-width {
+    max-width: 700px !important;
+  }
+  body header .search {
+    position: relative;
+  }
+  body header .search img {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 24px;
+  }
+  body header .search input {
+    width: 500px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1882352941);
+    color: #fff;
+    padding-left: 50px;
+    outline: 0;
+    border: none;
+    border-radius: 20px;
+  }
+  body header .search input::placeholder {
+    color: #e1e1e1;
+  }
+  body section.hero {
+    background-image: url("../images/pao-de-acucar-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+  }
+  body section.hero .destak .title {
+    position: relative;
+  }
+  body section.hero .destak .title .wrapper_content .wrapper_title {
+    position: relative;
+  }
+  body section.hero .destak .title .wrapper_content .wrapper_title h1 {
+    flex-direction: row;
+    align-items: center;
+    font-size: 100px;
+  }
+  body section.hero .destak .title .wrapper_content .wrapper_title h1 span {
+    margin-left: 45px;
+  }
+  body section.hero .destak .title .wrapper_content .wrapper_title h2 {
+    position: absolute;
+    display: flex;
+    bottom: 100px;
+    left: 100px;
+    font-family: "Lato-Light";
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  body section.hero .destak .links .link-item h3 {
+    font-size: 25px;
+    line-height: 1;
+  }
+  body section.hero .destak .links .link-item h4 {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  body section.hero .destak .links .link-item:nth-child(2) {
+    display: flex;
+    margin-left: 36px;
+  }
+  body section.hero .destak .arrow {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  body section.hero {
+    background-image: url("../images/pao-de-acucar-desktop.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+  }
+  body section.hero .destak .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body section.hero .destak .wrapper_content {
+    position: relative;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body section.hero .destak .wrapper_content .index_slider {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+  body section.hero .destak .wrapper_content .index_slider .item_slider_index {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  body section.hero .destak .wrapper_content .index_slider .item_slider_index span {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  body section.hero .destak .wrapper_content .index_slider .item_slider_index .bar {
+    height: 0;
+  }
+  body section.hero .destak .wrapper_content .index_slider .item_slider_index.active {
+    color: #f2b822;
+    margin-bottom: 0;
+  }
+  body section.hero .destak .wrapper_content .index_slider .item_slider_index.active .bar {
+    margin-top: 2px;
+    margin-bottom: 8px;
+    height: 100px;
+    width: 2px;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  body section.hero .destak .links .link-item h3 {
+    font-size: 18px;
+    line-height: 1;
+  }
+  body section.hero .destak .links .link-item svg path {
+    fill: #fff;
+  }
+  body section.hero .destak .links .link-item.selected {
+    color: #f2b822;
+  }
+  body section.hero .destak .links .link-item.selected svg path {
+    fill: #f2b822;
+  }
+  body section.hero .destak .links .link-item:nth-child(3), body section.hero .destak .links .link-item:nth-child(4) {
+    display: flex;
+    margin-left: 36px;
+  }
+  body section.hero .destak .arrow {
+    display: none;
+  }
+}
+.popular-places {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  max-width: 300px;
+}
+.popular-places .section-title {
+  text-align: center;
+  margin: 100px 0;
+}
+.popular-places .section-title h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+.popular-places .section-title .custom-hr {
+  margin: 0 auto;
+}
+.popular-places .section-title h3 {
+  font-weight: lighter;
+  font-size: 1em;
+  margin-top: 10px;
+}
+.popular-places .places {
+  margin: 100px 0;
+}
+.popular-places .places .individual-place {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  margin-top: 60px;
+  cursor: pointer;
+}
+.popular-places .places .individual-place .description {
+  height: 160px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(16, 25, 30, 0.5019607843);
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.popular-places .places .individual-place .description .name {
+  display: flex;
+}
+.popular-places .places .individual-place .description .name img {
+  width: 15px;
+  height: 25px;
+}
+.popular-places .places .individual-place .description .name h3 {
+  margin-left: 15px;
+}
+.popular-places .places .individual-place:nth-child(1) {
+  background: url("../images/cristo-redentor.png") no-repeat;
+  background-size: cover;
+}
+.popular-places .places .individual-place:nth-child(2) {
+  background: url("../images/bondinho.png") no-repeat;
+  background-size: cover;
+}
+.popular-places .places .individual-place:nth-child(3) {
+  background: url("../images/maracana.png") no-repeat;
+  background-size: cover;
+}
+.popular-places .places .individual-place:nth-child(4) {
+  background: url("../images/feira-sao-cristovao.png") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .popular-places {
+    max-width: 700px;
+    width: 100%;
+  }
+  .popular-places .section-title h2 {
+    font-size: 2.5em;
+  }
+  .popular-places .section-title h3 {
+    font-size: 1.5em;
+  }
+  .popular-places .places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .popular-places .places .individual-place {
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .popular-places {
+    max-width: 1100px;
+  }
+  .popular-places .places {
+    justify-content: space-around;
+  }
+  .popular-places .places .individual-place {
+    width: 400px;
+  }
+}
+@media (min-width: 1400px) {
+  .popular-places {
+    max-width: 1300px;
+  }
+  .popular-places .section-title h2 {
+    font-size: 2.5em;
+  }
+  .popular-places .section-title h3 {
+    font-size: 2em;
+  }
+  .popular-places .places .individual-place {
+    width: 300px;
+  }
+}
+main .why-choose-us {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 50px 0;
+}
+main .why-choose-us h2 {
+  font-size: 1.6em;
+  margin: 0;
+  margin-bottom: 15px;
+}
+main .why-choose-us .custom-hr {
+  margin: 0 auto;
+}
+main .why-choose-us .reasons {
+  max-width: 300px;
+  margin: 50px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+main .why-choose-us .reasons .reason-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  cursor: pointer;
+}
+main .why-choose-us .reasons .reason-item .reason-title h3 {
+  margin: 15px 0;
+}
+main .why-choose-us .reasons .reason-item .reason-title p {
+  margin: 20px 0;
+}
+main .why-choose-us .reasons .reason-item .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #505050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .why-choose-us .reasons .reason-item.active {
+  border-bottom: 1px solid #f2b822;
+}
+main .why-choose-us .reasons .reason-item.active .icon {
+  background-color: #fefefd;
+}
+main .why-choose-us .reasons .reason-item.active h3 {
+  color: #f2b822;
+}
+
+@media (min-width: 768px) {
+  main .why-choose-us h2 {
+    font-size: 2.5em;
+  }
+  main .why-choose-us .reasons {
+    max-width: 700px;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  main .why-choose-us .reasons {
+    max-width: 1100px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main .why-choose-us .reasons .reason-item {
+    width: 300px;
+  }
+}
+main .perfect-vacations {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+main .perfect-vacations .vacation-images {
+  display: flex;
+  justify-content: center;
+}
+main .perfect-vacations .vacation-images div {
+  padding: 10px 10px;
+}
+main .perfect-vacations .vacation-images div img {
+  width: 100%;
+  margin-top: 10px;
+}
+main .perfect-vacations .vacation-images div:nth-child(1) {
+  width: 210px;
+}
+main .perfect-vacations .vacation-images div:nth-child(2) {
+  width: 162px;
+}
+main .perfect-vacations .vacation-text {
+  max-width: 300px;
+  margin: 0 auto;
+}
+main .perfect-vacations .vacation-text h2 {
+  font-size: 1.6em;
+  margin: 0;
+  margin-top: 50px;
+}
+main .perfect-vacations .vacation-text p {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 1em;
+}
+main .perfect-vacations .vacation-text button {
+  width: 120px;
+  height: 40px;
+  background-color: #f2b822;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 52px;
+  font-weight: 300;
+}
+main .perfect-vacations .vacation-text button:hover {
+  background-color: #b58a1e;
+}
+
+@media (min-width: 768px) {
+  main .perfect-vacations {
+    flex-direction: row;
+  }
+  main .perfect-vacations .vacation-images div:nth-child(2) {
+    margin-left: 15px;
+  }
+  main .perfect-vacations .vacation-text h2 {
+    margin-top: 0;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  main .perfect-vacations {
+    justify-content: space-around;
+  }
+  main .perfect-vacations .vacation-images div:nth-child(1) {
+    width: 325px;
+  }
+  main .perfect-vacations .vacation-images div:nth-child(2) {
+    width: 253px;
+  }
+  main .perfect-vacations .vacation-text {
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  main .perfect-vacations .vacation-text {
+    max-width: 600px;
+    margin-left: 40px;
+  }
+  main .perfect-vacations p {
+    max-width: 300px;
+  }
+}
+@media (min-width: 1400px) {
+  main .perfect-vacations .vacation-text {
+    max-width: 700px;
+  }
+  main .perfect-vacations .vacation-text h2 {
+    max-width: 550px;
+  }
+  main .perfect-vacations .vacation-text p {
+    max-width: 400px;
+  }
+}
+footer {
+  background: #1E1E1E;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+footer .footer-info, footer .copyright {
+  z-index: 2;
+}
+footer .footer-info {
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-info .logo {
+  align-self: center;
+}
+footer .footer-info .links-and-contact {
+  margin-top: 100px;
+  width: 100%;
+}
+footer .footer-info .links-and-contact .footer-links li {
+  margin-top: 10px;
+}
+footer .footer-info .links-and-contact h3 {
+  font-size: 1.6em;
+  color: #F2B822;
+}
+footer .footer-info .links-and-contact .contact {
+  margin-top: 40px;
+}
+footer .footer-info .links-and-contact .contact p {
+  margin-top: 10px;
+}
+footer .footer-info .social-media {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer-info .social-media a img {
+  height: 50px;
+}
+footer .copyright {
+  width: 100%;
+  height: 100px;
+  border-top: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer .footer-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: unset;
+    margin-bottom: 50px;
+  }
+  footer .footer-info .logo img {
+    width: 150px;
+  }
+  footer .footer-info .links-and-contact {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: unset;
+    margin-left: 50px;
+  }
+  footer .social-media {
+    margin: unset;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .social-media a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer-info {
+    max-width: 1100px;
+  }
+  footer .footer-info .logo img {
+    width: 150px;
+  }
+  footer .footer-info .social-media {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
