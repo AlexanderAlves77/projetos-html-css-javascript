@@ -1,12 +1,12 @@
 {
   "name": "assets",
   "version": "1.0.0",
-  "description": "Projeto Rjclick: Desenvolvimento do site de pontos turísticos do Rio de Janeiro",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch assets/scss:assets/css"
   },
   "keywords": [],
-  "author": "Alexander Alves",
+  "author": "",
   "license": "ISC"
 }
