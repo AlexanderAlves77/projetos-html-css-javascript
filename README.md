@@ -21,3 +21,6 @@ Create Toast Notifications
 
 ## Project #07 
 RJClick - Pontos Turísticos do Rio de Janeiro
+
+## Project #08 
+Project Theme Clock Drak/Light mode.
