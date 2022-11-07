@@ -27,3 +27,6 @@ Project Theme Clock Dark/Light mode.
 
 ### Project #09 
 Project Theme Lamp On/Off  
+
+### Project #10 
+Project Slider Show 
