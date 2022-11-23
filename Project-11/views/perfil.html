@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../plugins/sweet-alert/dist/sweetalert2.min.css">
+  <title>Registre-se</title>
+</head>
+
+<body>
+  <div class="flex-dashboard">
+    <sidebar>
+      <div class="sidebar-title">
+        <img src="../images/heartbeat.png" alt="heartbeat">
+        <h2>Health Track</h2>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li>
+            <i class="fa-solid fa-house-chimney"></i>
+            <a href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="selected">
+            <i class="fa-solid fa-user"></i>
+            <a href="perfil.html">Perfil</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-scale-balanced"></i>
+            <a href="gerenciarPeso.html">Gerenciar Peso e Altura</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-heart-pulse"></i>
+            <a href="gerenciarPressao.html">Gerenciar Pressão Arterial</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-person-skating"></i>
+            <a href="gerenciarAtividades.html">Gerenciar Atividades Físicas</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-utensils"></i>
+            <a href="gerenciarAlimentos.html">Gerenciar Alimentos</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-calculator"></i>
+            <a href="calcularIMC.html">Calcular IMC</a>
+          </li>
+        </ul>
+      </div>
+    </sidebar>
+
+    <main>
+      <header>
+        <a href="dashboard.html"><i class="fa-solid fa-house-chimney"></i> Dashboard</a>
+        <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+      </header>
+
+      <div class="main-content">
+        <div class="main-content-title">
+          <h2>PERFIL</h2>
+        </div>
+
+        <div class="perfil-parent">
+          <div class="perfil">
+            <div class="perfil-img">
+              <div class="img"></div>
+            </div>
+
+            <div class="perfil-form">
+              <form id="form-perfil">
+                <div class="form-group">
+                  <label for="name">Nome Completo</label>
+                  <input type="text" class="form-control" name="nome" id="name" placeholder="Nome completo">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="email">
+                </div>
+                <div class="form-group">
+                  <label for="cpf">CPF</label>
+                  <input type="text" class="form-control" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                </div>
+                <div class="form-group">
+                  <label for="idade">Idade</label>
+                  <input type="text" class="form-control" name="idade" id="idade" placeholder="Idade">
+                </div>
+                <div class="form-group">
+                  <label for="genre">Gênero</label>
+                  <select class="form-control" id="genre" name="genero" >            
+                    <option>Masculino</option>
+                    <option>Feminino</option>            
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="password">Senha</label>
+                  <input type="password" class="form-control" name="senha" id="password" placeholder="Senha">
+                </div>
+                <div class="form-group">
+                  <label for="password">Confirmar Senha</label>
+                  <input type="password" class="form-control" name="confirmarSenha" id="confirmPassword" placeholder="Senha">
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile">
+                  <label for="customFile" class="custom-file-label">
+                    Custom File
+                  </label>
+                </div>
+                <div>
+                  <button type="submit" id="perfil-save" class="btn">Salvar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </main>
+  </div>
+
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <script src="../plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../plugins/jquery-validation/dist/additional-methods.min.js"></script>
+  <script src="../plugins/jquery-validation/dist/localization/messages_pt_BR.min.js"></script>
+  <script src="../plugins/sweet-alert/dist/sweetalert2.all.min.js"></script>
+  <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../plugins/fontawesome/js/all.min.js"></script>
+  <script src="../js/Perfil.js"></script>
+</body>
+
+</html>
+

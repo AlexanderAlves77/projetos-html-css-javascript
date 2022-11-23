@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../plugins/sweet-alert/dist/sweetalert2.min.css">
+  <title>Registre-se</title>
+</head>
+
+<body>
+  <div class="flex-dashboard">
+    <sidebar>
+      <div class="sidebar-title">
+        <img src="../images/heartbeat.png" alt="heartbeat">
+        <h2>Health Track</h2>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li class="selected">
+            <i class="fa-solid fa-house-chimney"></i>
+            <a href="dashboard.html">Dashboard</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-user"></i>
+            <a href="perfil.html">Perfil</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-scale-balanced"></i>
+            <a href="gerenciarPeso.html">Gerenciar Peso e Altura</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-heart-pulse"></i>
+            <a href="gerenciarPressao.html">Gerenciar Pressão Arterial</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-person-skating"></i>
+            <a href="gerenciarAtividades.html">Gerenciar Atividades Físicas</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-utensils"></i>
+            <a href="gerenciarAlimentos.html">Gerenciar Alimentos</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-calculator"></i>
+            <a href="calcularIMC.html">Calcular IMC</a>
+          </li>
+        </ul>
+      </div>
+    </sidebar>
+
+    <main>
+      <header>
+        <a href="dashboard.html"><i class="fa-solid fa-house-chimney"></i> Dashboard</a>
+        <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+      </header>
+
+      <div class="main-content">
+        <div class="main-content-title">
+          <h2>Dashboard</h2>        
+        </div>
+
+        <div class="dashboard-content">
+          <div class="dashboard-flex-parent">
+            <div class="dashboard-box">
+              <div class="dashboard-box-wrapper">
+                <div class="box-icon box-weight">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <div class="value">80kg</div>
+                <div class="type">PESO</div>
+                <div class="box-value-percentual box-value-weight">
+                  <i class="fa-solid fa-chevron-up"></i>
+                  <span>10%</span>
+                </div>
+              </div>              
+            </div>
+
+            <div class="dashboard-box">
+              <div class="dashboard-box-wrapper">
+                <div class="box-icon box-pressure">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <div class="value">23MMHC</div>
+                <div class="type">PRESSÃO ARTERIAL</div>
+                <div class="box-value-percentual box-value-pressure">
+                  <i class="fa-solid fa-chevron-up"></i>
+                  <span>10%</span>
+                </div>
+              </div>              
+            </div>
+
+            <div class="dashboard-box">
+              <div class="dashboard-box-wrapper">
+                <div class="box-icon box-imc">
+                  <i class="fa-solid fa-calculator"></i>
+                </div>
+                <div class="value">23,2</div>
+                <div class="type">IMC</div>
+                <div class="box-value-percentual box-value-imc">
+                  <span>NORMAL</span>
+                </div>
+              </div>              
+            </div>
+
+            <div class="dashboard-box">
+              <div class="dashboard-box-wrapper">
+                <div class="box-icon box-workout">
+                  <i class="fa-solid fa-person-biking"></i>
+                </div>
+                <div class="value">BICICLETA</div>
+                <div class="type">ATIVIDADE FÍSICA</div>
+                <div class="box-value-percentual box-value-workout">
+                  <i class="fa-regular fa-clock"></i>
+                  <span>22/11/2022</span>
+                </div>
+              </div>              
+            </div>
+            
+          </div>
+        </div>
+      </div>      
+    </main>
+  </div>
+
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <script src="../plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="../plugins/jquery-validation/dist/localization/messages_pt_BR.min.js"></script>
+  <script src="../plugins/sweet-alert/dist/sweetalert2.all.min.js"></script>
+  <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../plugins/fontawesome/js/all.min.js"></script>
+</body>
+
+</html>
