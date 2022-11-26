@@ -7,10 +7,10 @@
 body {
   height: 100vh;
   display: flex;
-  background-color: #e4c515;
+  background-color: #C3E1EB;
 }
 
-#cardboard {
+.memory-game {
   width: 1200px;
   height: 1500px;
   margin: auto;
@@ -22,13 +22,15 @@ body {
   width: calc(15% - 10px);
   height: calc(15% - 10px);
   margin: 5px;
-  transform-style: preserve-3d;
-  transition: 0.3s;
   position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
 }
 
 .memory-card:active {
   transform: scale(0.97);
+  transition: transform .2s;
 }
 
 .memory-card.flip {
@@ -41,7 +43,9 @@ body {
   height: 100%;
   padding: 5px;
   position: absolute;
-  background: #675a10;
+  border-radius: 5px;
+  background: #1C7CCC;
+  backface-visibility: hidden;
 }
 
 .front-face {
