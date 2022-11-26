@@ -19,13 +19,15 @@ let cardHTML = ''
 
 uno_cards.forEach(card => {
   cardHTML += `
-    <div>
-      <img src="img/${card}">
-      <img src="img/${capa}">
+    <div class="memory-card">
+      <img class="front-face" src="img/${card}">
+      <img class="back-face" src="img/${capa}">
     </div>
   `
 })
 
-cardBoard.innerHTML = cardHTML
+cardBoard.innerHTML = cardHTML + cardHTML
+
+
 
 
