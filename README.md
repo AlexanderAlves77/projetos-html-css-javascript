@@ -39,3 +39,6 @@ Project Email Validation Check
 
 ### Project #13
 Project Memory game
+
+### Project #14
+Project Manipulate Word
