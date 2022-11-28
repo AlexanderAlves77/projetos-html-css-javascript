@@ -14,3 +14,31 @@ body {
   background: linear-gradient(45deg, #fbda61, #ff5acd);
   font-family: "Poppins", sans-serif;
 }
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 190px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.card:hover {
+  height: 450px;
+}
+
+.imgBx {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translate(-50%);
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: 0.5s;
+}
