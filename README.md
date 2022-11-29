@@ -1,19 +1,19 @@
 # Projetos HTML, CSS e Javascript.
 Alguns projetos desenvolvidos apenas em HTML, CSS e Javascript.
 
-### Projeto 01
+### Projeto #01
+Project Game Flappy Bird.
+
+### Projeto #02
 Projeto sobre alimentos, demonstrando alguns alimentos diferentes.
 
-### Projeto 02
-Projeto Designer Criativo.
-
-### Projeto 03
+### Projeto #03
 O aplicativo conversor de temperatura.
 
-### Projeto 04
+### Projeto #04
 O Clicker da Galeria
 
-### Projeto 05
+### Projeto #05
 Aplicativo controlador de velocidade de vídeo
 
 ### Project #06 
@@ -45,3 +45,6 @@ Project Manipulate Word
 
 ### Project #15
 Animated Profile Card
+
+### Projeto #16
+Projeto Designer Criativo.
