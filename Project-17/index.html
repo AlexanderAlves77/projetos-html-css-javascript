@@ -1,129 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="title"> Calculadora - IMC </div>
+        <div class="input">
+            <label>Nome:</label>
+            <input type="text" id='nome'>
+        </div>
+        <div class="input">
+            <label>Altura:</label>
+            <input type="number" id='altura'>
+        </div>
+        <div class="input">
+            <label>Peso:</label>
+            <input type="number" id='peso'>
+        </div>
+        <button id='calcular'>Calcular</button>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
-  <title>Dashboard</title>
-</head>
-<body>
-  <header>
-    <div class="info-header">
-      <div class="logo">
-        <h3>Fulldevstacks</h3>
+        <div class="result" id='resultado'></div>
       </div>
-      <div class="icons-header">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-    </div>
-    <div style="align-items: center;" class="info-header">
-      <i class="fa-solid fa-envelope"></i>
-      <i class="fa-solid fa-bell"></i>
-      <img src="./imgs/avatar-1.jpg" alt="foto perfil">
-    </div>
-  </header>
-
-  <section class="main">
-    <div class="sidebar">
-      <h3>Home</h3>
-      <a href="#"><i class="fa-solid fa-house"></i> Relatórios</a>
-      <a href="#"><i class="fa-solid fa-house"></i> Relatórios</a>
-      <a href="#"><i class="fa-solid fa-house"></i> Relatórios</a>
-      <a href="#"><i class="fa-solid fa-house"></i> Relatórios</a>
-      <br />
-      <div class="separator"></div>
-      <h3>Home</h3>
-      <a href="#"><i class="fa-solid fa-house"></i> Relatórios</a>
-      <a href="#"><i class="fa-solid fa-house"></i> Relatórios</a>
-      <a href="#"><i class="fa-solid fa-house"></i> Relatórios</a>
-      <a href="#"><i class="fa-solid fa-house"></i> Relatórios</a>
-      <br />
-      <div class="separator"></div>
-    </div>
-
-    <div class="content">
-      <div class="titulo-secao">
-        <h2>Dashboard Sale</h2>
-        <br />
-        <div class="separator"></div>
-        <br />
-        <p><i class="fa-solid fa-house"></i> / Dashboard Sale</p>
-      </div>
-
-      <div class="box-info">
-        <div class="box-info-single box-color-1">
-          <div class="info-text">
-            <h3>Total Sales</h3>
-            <p>R$ 1.000,00</p>
-          </div>
-          <i class="fa-solid fa-money-check-dollar"></i>
-        </div>
-
-        <div class="box-info-single box-color-2">
-          <div class="info-text">
-            <h3>Total Orders</h3>
-            <p>15.830</p>
-          </div>
-          <i class="fa-solid fa-money-check-dollar"></i>
-        </div>
-
-        <div class="box-info-single box-color-3">
-          <div class="info-text">
-            <h3>Average Price</h3>
-            <p>R$ 1.000,00</p>
-          </div>
-          <i class="fa-solid fa-money-check-dollar"></i>
-        </div>
-      </div>
-
-      <div class="feed">
-        <div class="feed-single">
-          <div class="feed-text">
-            <div class="circle-icon">
-              <i class="fa-solid fa-bell"></i>
-            </div>
-            <span>Tutorial Novo</span>
-          </div>
-          <div class="feed-time">
-            <h3>30 minutes ago</h3>
-          </div>
-        </div>
-
-        <div class="feed-single">
-          <div class="feed-text">
-            <div class="circle-icon">
-              <i class="fa-solid fa-bell"></i>
-            </div>
-            <span>Tutorial Novo</span>
-          </div>
-          <div class="feed-time">
-            <h3>30 minutes ago</h3>
-          </div>
-        </div>
-
-        <div class="feed-single">
-          <div class="feed-text">
-            <div class="circle-icon">
-              <i class="fa-solid fa-bell"></i>
-            </div>
-            <span>Tutorial Novo</span>
-          </div>
-          <div class="feed-time">
-            <h3>30 minutes ago</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
-    integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</body>
+    </main>
+    <script src="./imc.js"></script>
+  </body>
 </html>
