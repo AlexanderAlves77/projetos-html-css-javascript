@@ -51,3 +51,6 @@ Projeto Designer Criativo.
 
 ### Projeto #17
 Project Calculate IMC.
+
+### Projeto #18
+Project Slider Using CSS And Vanilla Javascript
