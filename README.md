@@ -53,4 +53,4 @@ Projeto Designer Criativo.
 Project Calculate IMC.
 
 ### Projeto #18
-Project Slider Using CSS And Vanilla Javascript
+Project Sticky Navigation Bar On Scroll
