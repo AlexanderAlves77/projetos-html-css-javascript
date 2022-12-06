@@ -54,3 +54,6 @@ Project Calculate IMC.
 
 ### Projeto #18
 Project Sticky Navigation Bar On Scroll
+
+### Projeto #19
+Project Flag Long Shadow
