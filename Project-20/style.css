@@ -1,0 +1,12 @@
+body {
+  background-image: url("imgs/fundo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+img {
+ position: absolute;
+ top: 50px;
+ left: 250px;
+}
