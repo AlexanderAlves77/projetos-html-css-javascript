@@ -69,3 +69,6 @@ Project CSS Clip Path Transform Effects on Scroll
 
 ### Projeto #23
 Project Cards Responsive with Hover Effect.
+
+### Projeto #24
+Project CSS Transform Effects on Scroll
