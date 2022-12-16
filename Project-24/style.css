@@ -22,9 +22,11 @@ section {
 
 section .skewed {
   position: absolute;
-  bottom: 0;
+  bottom: -100%;
   left: 0;
   width: 100%;
   height: 100%;
   background: #fff;
+  transform: skewY(-10deg);
+  transform-origin: top left;
 }
