@@ -23,7 +23,7 @@ body {
 
 .container .icon {
   position: relative;
-  width: 50vw;
+  width: 50%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@ body {
 
 .container .icon .iconBox {
   position: relative;
-  width: calc(50vw - 40px);
+  width: calc(50% - 40px);
   margin: 0 30px 30px 0;
   padding: 0 25px;
   height: 140px;
@@ -63,7 +63,7 @@ body {
 
 .content {
   position: relative;
-  width: 50vw;
+  width: 50%;
   overflow: hidden;
 }
 
@@ -84,4 +84,6 @@ body {
   opacity: 1;
 }
 
-.content .contentBox h2
+.content .contentBox h2 {
+  font-size: 3em;
+}
