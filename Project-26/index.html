@@ -10,22 +10,22 @@
 <body>
   <div class="container">
     <div class="icon">
-      <div class="iconBox">
-        <img src="image01.png" alt="google">
+      <div class="iconBox active">
+        <img src="image01.png" alt="google" data-id="content1">
       </div>
       <div class="iconBox">
-        <img src="image02.png" alt="facebook">
+        <img src="image02.png" alt="facebook" data-id="content2">
       </div>
       <div class="iconBox">
-        <img src="image03.png" alt="twitter">
+        <img src="image03.png" alt="twitter" data-id="content3">
       </div>
       <div class="iconBox">
-        <img src="image04.png" alt="yahoo">
+        <img src="image04.png" alt="yahoo" data-id="content4">
       </div>
     </div>
 
     <div class="content">   
-      <div class="contentBox">
+      <div class="contentBox active" id="content1">
         <div>
           <div class="text">
             <h2>Google Text</h2>
@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>   
-      <div class="contentBox">
+      <div class="contentBox" id="content2">
         <div>
           <div class="text">
             <h2>Facebook Text</h2>
@@ -47,7 +47,7 @@
           </div>
         </div>
       </div>
-      <div class="contentBox">
+      <div class="contentBox" id="content3">
         <div>
           <div class="text">
             <h2>Twitter Text</h2>
@@ -58,7 +58,7 @@
           </div>
         </div>
       </div>
-      <div class="contentBox">
+      <div class="contentBox" id="content4">
         <div>
           <div class="text">
             <h2>Yahoo Text</h2>
@@ -73,5 +73,6 @@
   </div>
 
   
+  <script src="script.js"></script>
 </body>
 </html>
