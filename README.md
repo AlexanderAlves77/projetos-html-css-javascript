@@ -78,3 +78,6 @@ Project 404 Page Not Found
 
 ### Projeto #26
 Project Create Tabs
+
+### Projeto #27
+Project Digital Clock UI Design
