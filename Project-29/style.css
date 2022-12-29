@@ -10,7 +10,7 @@
 .container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
   padding: 20px;
 }
 
-.container#blur .active {
+.container#blur.active {
   filter: blur(20px);
   pointer-events: none;
   user-select: none;
@@ -38,6 +38,7 @@ h2 {
 
 .container .content img {
   max-width: 100%;
+  display: block;
 }
 
 a {
@@ -65,8 +66,8 @@ a {
 }
 
 #popup.active {
-  top: 40%;
+  top: 50%;
   visibility: visible;
-  opacity: 0;
+  opacity: 1;
   transition: 0.5s;
 }
