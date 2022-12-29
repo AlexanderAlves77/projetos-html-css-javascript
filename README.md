@@ -84,3 +84,6 @@ Project Digital Clock UI Design
 
 ### Projeto #28
 Project Double Digital Clock UI Design
+
+### Projeto #29
+Project Popup With Blurred Background
