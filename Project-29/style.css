@@ -7,10 +7,39 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-body {
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: #060a1f;
+  background: #fff173;
+  transition: 0.5s;
+  padding: 20px;
+}
+
+.container .content {
+  position: relative;
+  max-width: 800px;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.container .content img {
+  max-width: 100%;
+}
+
+a {
+  position: relative;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #111;
 }
