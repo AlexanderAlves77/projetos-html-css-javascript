@@ -22,4 +22,12 @@
 .container .slide .slide1 {
   background: url("sprite_bg.png");
   background-attachment: fixed;
+  background-position: center;
+}
+
+.container .slide .slide2 {
+  background: url("coca_bg.png");
+  background-attachment: fixed;
+  background-position: center;
+  left: 50%;
 }
