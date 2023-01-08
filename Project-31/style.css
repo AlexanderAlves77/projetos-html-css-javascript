@@ -20,6 +20,7 @@ section .curve {
   bottom: -200px;
   height: 200px;
   width: 100%;
+  transform-origin: top;
 }
 
 section .curve img {
