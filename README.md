@@ -92,4 +92,4 @@ Project Popup With Blurred Background
 Project Image Comparision Slider 
 
 ### Projeto #31
-Project Website From Scratch 
+Project Transform Effects on Scroll
