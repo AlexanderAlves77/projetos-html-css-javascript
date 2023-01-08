@@ -19,15 +19,17 @@
   height: 100%;
 }
 
-.container .slide .slide1 {
+.container .slide.slide1 {
   background: url("sprite_bg.png");
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
 }
 
-.container .slide .slide2 {
+.container .slide.slide2 {
   background: url("coca_bg.png");
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   left: 50%;
 }
