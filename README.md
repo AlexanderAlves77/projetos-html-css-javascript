@@ -93,3 +93,6 @@ Project Image Comparision Slider
 
 ### Projeto #31
 Project Transform Effects on Scroll
+
+### Projeto #32
+Project Layered Image Parallax Effect
