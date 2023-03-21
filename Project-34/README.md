@@ -1,6 +1,6 @@
 # solarsystem
 
-"How To Make An Object Rotate Around Another Object In Three.js - Create A Solar System" YouTube tutorial project files https://youtu.be/XXzqSAt3UIw
+"How To Make An Object Rotate Around Another Object In Three.js - Create A Solar System" 
 
 1. Download repository
 2. Make sure to install dependencies: open project in VSCode -> open command line -> type: npm install
