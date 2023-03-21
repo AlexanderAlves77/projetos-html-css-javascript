@@ -10,6 +10,7 @@
   "author": "Alexander Alves",
   "license": "ISC",
   "dependencies": {
+    "parcel": "^2.8.3",
     "three": "^0.133.0"
   },
   "devDependencies": {
