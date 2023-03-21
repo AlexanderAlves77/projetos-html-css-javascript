@@ -99,3 +99,6 @@ Project Layered Image Parallax Effect
 
 ### Projeto #33
 Project Number Input Spinner
+
+### Projeto #34
+How To Make An Object Rotate Around Another Object In Three.js 
