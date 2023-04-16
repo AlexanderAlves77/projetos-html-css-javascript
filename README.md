@@ -108,3 +108,6 @@ How to make a modal with html and css
 
 ### Projeto #36
 Image Gallery Pop Up
+
+### Projeto #37
+Navbar Effect
