@@ -1,10 +1,12 @@
 const sections = document.querySelectorAll("section")
 const trans = document.querySelector(".trans")
-const gradents = ["coral", "chartreuse", "chocolate", "cadetblue"]
+const gradients = ["coral", "chartreuse", "chocolate", "cadetblue"]
 
 const options = { threshold: 0.7 }
 
-const navScroll = (entries) => {
+let observer = new IntersectionObserver(navScroll, options)
+
+function navScroll(entries) {
   entries.forEach(function(entry) {
 
     const className = entry.target.className
@@ -15,7 +17,7 @@ const navScroll = (entries) => {
       height: coordinates.height,
       width: coordinates.width,
       top: coordinates.top,
-      left: coordinates.height,
+      left: coordinates.left,
     }
 
     if(entry.isIntersecting) {
@@ -27,8 +29,6 @@ const navScroll = (entries) => {
     }
   })
 }
-
-let observer = new IntersectionObserver(navScroll, options)
 
 sections.forEach(function(section) {
   observer.observe(section)
