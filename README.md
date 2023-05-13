@@ -117,3 +117,7 @@ Game Candy Crush
 
 ### Projeto #39
 Manipulate files with Javascript (Upload and Download)
+
+### Projeto #40
+Gradient Generator in Javascript
+

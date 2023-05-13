@@ -19,6 +19,7 @@ const download = function() {
   const a = document.createElement('a')
   a.style = 'display: none'
   document.body.appendChild(a)
+  
   return function(conteudo, fileName) {
     const blob = new Blob([conteudo], { type: 'octet/stream' })
     const url = window.URL.createObjectURL(blob)
