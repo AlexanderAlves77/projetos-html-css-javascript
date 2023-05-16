@@ -481,5 +481,16 @@ main .fast-payment .badge div {
 }
 
 
+/* ===================== CANVAS ===================== */
+canvas#chart {
+  background: var(--color-white);
+  max-width: 100%;
+  margin-top: 2rem;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+}
 
+
+
+/* ===================== NAV BAR ===================== */
 /* ===================== NAV BAR ===================== */
