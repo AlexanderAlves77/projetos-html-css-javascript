@@ -124,3 +124,6 @@ Gradient Generator in Javascript
 ### Projeto #41
 Responsive Admin Dashboard 
 
+### Projeto #42
+Professional Curriculum  
+
