@@ -125,5 +125,8 @@ Gradient Generator in Javascript
 Responsive Admin Dashboard 
 
 ### Projeto #42
-Professional Curriculum  
+Professional Curriculum 
+
+### Projeto #42
+Contact Agenda Localstorage 
 
