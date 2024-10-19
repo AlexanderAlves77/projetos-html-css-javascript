@@ -42,13 +42,12 @@ function renderizarContatos(contatos = obterContatos()) {
     contatos.forEach(function(contato) {
       const tr = document.createElement('tr');
       tr.innerHTML = `<td>${contato.nome}</td>
-                      <td>${contato.email}</td>
-                      <td>${contato.telefone}</td>
-                      <td>
-                        <button onclick="editarContato(${contato.id})">Alterar</button>
-                        <button onclick="excluirContato(${contato.id})">Excluir</button>
-                      </td>`;
-      
+      <td>${contato.email}</td>
+      <td>${contato.telefone}</td>
+      <td>
+        <button onclick="editarContato(${contato.id})">Alterar</button>
+        <button onclick="excluirContato(${contato.id})">Excluir</button>
+      </td>`;      
       tbody.appendChild(tr);
     });
 
